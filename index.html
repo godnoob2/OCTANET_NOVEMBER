@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodi:The Online food store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="header"> 
+       <nav>
+        <div class="logo"><h1>FO<b>o</b>D<b>i</b></h1></div>  
+         <div class="nav-links" id="navlinks">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="">VEG</a></li>
+                <li><a href="">NON-VEG</a></li>
+                <li><a href="">CART</a></li>
+                <li><a href="">ACCOUNT</a></li>
+            </ul>
+        </div>
+         <div class="nav_bar-btn">
+            <i class="fa fa-window-close" onclick="hidemenu()"></i>
+            <i class="fa fa-bars" onclick="showmenu()"></i> <!--javascript cmd-->
+         </div>
+        
+    </nav>
+        <div class="text-box">
+            <h1>YUMMY MOMOZ</h1>
+            <p>“When life gets tough, just remember there are always momos. <br> They asked me in veg I said momos, then they asked me in non veg I said momos.” </p>
+            <a href="" class="hero-btn" >ORDER NOW</a>
+            
+        </div>
+    </section>
+    
+
+
+    <section class="course">
+
+        <h2>MOMOS WE OFFER </h2>
+
+        <div class="row">
+            
+            <div class="course-col">
+                <h3>Veg</h3>
+                <p>"A delectable medley of finely chopped vegetables encased in a delicate dumpling, steamed to perfection. A delightful burst of flavors in every bite!"</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Non-veg</h3>
+                <p>" Succulent meat, expertly seasoned and enveloped in a thin, steamed dumpling. A burst of flavor that will leave your taste buds craving for more!"</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Tandoori</h3>
+                <p>" Succulent meat, expertly seasoned and enveloped in a thin, steamed dumpling. A burst of flavor that will leave your taste buds craving for more!"</p>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- footer section -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, porro, aut est atque architecto saepe <br>porro, aut est atque architecto saepe.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            
+         </section>
+   
+         <script>
+            const mobile_nav = document.querySelector(".nav_bar-btn");
+            const nav_Ele = document.querySelector(".header");
+            mobile_nav.addEventListener('click',() => {
+                nav_Ele.classList.toggle("active");
+            });
+
+    
+        </script>
+    
+   
+</body>
+</html>
